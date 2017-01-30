@@ -1,0 +1,29 @@
+//@import "../fonts/_fonts";
+@import "_misc/varibles";
+@import "_misc/mixins";
+@import "../../bower_components/normalize.css/normalize.css";
+@import "_misc/settings";
+@import "_misc/sprite";
+
+//plugins:
+@import "../../bower_components/slick-carousel/slick/slick.scss";
+@import "../../bower_components/animate.css/animate.min.css";
+
+//Partials_index
+@import "./partials/_header";
+@import "./partials/_banners";
+@import "./partials/_hits";
+@import "./partials/_seo";
+@import "./partials/_news";
+@import "./partials/_map";
+@import "./partials/_footer";
+@import "./partials/_callback";
+@import "./partials/popup";
+
+//Partials_catalog:
+@import "./partials/_catalog_wrap-top";
+@import "./partials/_catalog_wrap-bottom";
+
+//media:
+@import "_misc/adaptive";
+

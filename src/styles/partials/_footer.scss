@@ -1,0 +1,140 @@
+.footer {
+  padding: rem(30px) 0;
+
+  .container {
+    @include flex();
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
+    @include tablets {
+      justify-content: center;
+    }
+  }
+}
+
+.social {
+  @include flex();
+  width: rem(200px);
+  justify-content: space-between;
+
+  a {
+    transition: box-shadow .2s;
+    border-radius: 50%;
+    display: block;
+    width: 32px;
+    height: 33px;
+
+    &:hover {
+      box-shadow: 2px 6px 10px #2a2c2f;
+    }
+
+    &:active {
+      box-shadow: none;
+    }
+  }
+
+
+  @include laptop {
+    width: 35%;
+    justify-content: center;
+
+    a {
+      margin-right: 10px;
+    }
+  }
+
+  @include tablets {
+    display: none;
+  }
+
+
+  &__tw {
+    @include sprite($tw);
+  }
+
+  &__insta {
+    @include sprite($insta);
+  }
+
+  &__fb {
+    @include sprite($fb);
+  }
+
+  &__vk {
+    @include sprite($vk);
+  }
+}
+
+.footer-list {
+  @include flex();
+  width: rem(400px);
+
+  @include laptop {
+    width: 40%;
+  }
+
+  @include tablets {
+    width: 60%;
+  }
+
+  @include phones {
+    display: none;
+  }
+}
+
+.footer-links__item {
+  width: 50%;
+  position: relative;
+
+  a {
+    font-size: rem(13px);
+    font-weight: 400;
+    color: #fff;
+    display: inline-block;
+    
+    &:after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 1px;
+      background: rgba(#fff, .4);
+      margin-top: -3px;
+      transition: background .3s;
+    }
+
+    &:hover {
+      &:after {
+        background: rgba(#fff, 1);
+      }
+    }
+  }
+
+  &:first-child {
+
+    a {
+      font-weight: 700;
+    }
+
+    &:after {
+      content: '';
+      @include sprite($heart);
+      position: absolute;
+      left: rem(-20px);
+      display: block;
+      top: rem(5px);
+    }
+  }
+}
+
+.copyright {
+  p {
+    font-weight: 400;
+  }
+
+  @include phones {
+    width: 100%;
+    @include flex();
+    justify-content: center;
+  }
+}

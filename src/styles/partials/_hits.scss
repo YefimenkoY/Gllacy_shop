@@ -1,0 +1,110 @@
+.hits {
+  margin-top: rem(40px);
+  @include flex();
+  justify-content: center;
+
+  &__list {
+    @include flex();
+    justify-content: space-around;
+    position: relative;
+  }
+
+  &__item {
+    flex: 1 25%;
+    @include flex();
+    justify-content: center;
+    align-items: center;
+    transition: transform .4s;
+    position: relative;
+
+    @include laptop {
+      flex: 1 45%;
+    }
+
+    &:hover {
+      box-shadow: 0 20px 20px rgba(#000, .4);
+      background: rgba(#13185E, .2);
+      border-radius: 5px;
+      transform: scale(1.04);
+      z-index:22;
+
+      p {
+        color: $red;
+      }
+
+      .button--hits {
+        visibility: visible;
+      }
+    }
+  }
+
+  &__img {
+    position: relative;
+
+    &:before {
+      content: 'хит';
+      position: absolute;
+      width: rem(60px);
+      height: rem(60px);
+      border-radius: 50%;
+      background: #fdff1d;
+      @include flex();
+      justify-content: center;
+      align-items: center;
+      line-height: rem(14px);
+      font-size: rem(15px);
+      color: $red;
+      left: 0;
+      top: 0;
+      text-transform: uppercase;
+      border: 2px solid $red;
+      z-index:2;
+    }
+  }
+
+  &__pick {
+    display: inline-block;
+    max-width: 230px;
+    max-height: 230px;
+  }
+
+  &__weight {
+    position: absolute;
+    bottom: rem(5px);
+    left: 0;
+    font-weight: 700;
+    font-size: rem(40px);
+    text-shadow: 0 2px 20px #000;
+  }
+
+  &__desc {
+    text-align: center;
+    width: 100%;
+
+    p {
+      font-size: rem(16px);
+    }
+  }
+}
+
+.button--hits {
+  margin-bottom: rem(30px);
+  visibility: hidden;
+  width: 100%;
+  @include flex();
+  justify-content: center;
+
+  a {
+    font-size: rem(15px);
+    font-weight: 700;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+

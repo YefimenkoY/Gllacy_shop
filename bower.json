@@ -1,0 +1,23 @@
+{
+  "name": "habr",
+  "version": "0.0.0",
+  "authors": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "*",
+    "jquery": "2.*",
+    "wow": "wowjs#^1.1.2",
+    "animatejs": "^1.0.1"
+  },
+  "devDependencies": {
+    "animate.css": "^3.5.2",
+    "slick-carousel": "slick.js#^1.6.0"
+  }
+}

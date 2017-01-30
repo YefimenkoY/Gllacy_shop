@@ -1,0 +1,69 @@
+.seo {
+  background: url("../img/bg/seo.jpg");
+  min-height: rem(200px);
+  margin-top: rem(10px);
+  border-radius: rem(20px);
+  padding: rem(20px);
+
+  @include tablets {
+    width: 90%;
+  }
+
+  &__title {
+    color: #323232;
+    font-size: rem(24px);
+  }
+
+  &__list {
+    @include flex();
+    justify-content: space-between;
+  }
+
+  &__item {
+    flex: 1 45%;
+    @include flex();
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0 10px;
+
+    @include tablets {
+      flex: 1 90%;
+    }
+
+    p {
+      color: #323232;
+      font-size: rem(16px);
+      font-weight: 400;
+      flex: 1 80%;
+    }
+
+    &:before {
+      content: '';
+      margin-right: rem(10px);
+      display: block;
+      width: rem(50px);
+      height: rem(50px);
+    }
+
+    &:nth-child(1) {
+      &:before {
+        @include sprite($ice-cream);
+      }
+    }
+    &:nth-child(2) {
+      &:before {
+        @include sprite($cow);
+      }
+    }
+    &:nth-child(3) {
+      &:before {
+        @include sprite($list);
+      }
+    }
+    &:nth-child(4) {
+      &:before {
+        @include sprite($term);
+      }
+    }
+  }
+}

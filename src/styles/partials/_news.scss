@@ -1,0 +1,127 @@
+.news-wrap {
+  @include flex();
+  justify-content: space-between;
+  margin-top: rem(45px);
+
+  @include laptop {
+    justify-content: center;
+  }
+}
+
+.news, .news-form {
+  width: 48%;
+  border-radius: rem(20px);
+  padding: rem(10px) rem(15px);
+
+  @include laptop {
+    width: rem(600px);
+    margin-top: rem(10px);
+  }
+
+  @include tablets {
+    width: 80%;
+    margin-top: rem(10px);
+  }
+
+  @include phones {
+    width: 100%;
+    margin-top: rem(10px);
+  }
+}
+
+.news {
+  background: #fff;
+  height: rem(220px);
+  padding: rem(20px);
+  background: url("../img/news.png") no-repeat rem(-55px) rem(-224px);
+
+  @include tablets {
+    margin-bottom: 20px;
+  }
+
+  &__box-link {
+    width: rem(300px);
+  }
+
+  &__link {
+    color: #353535;
+    font-size: rem(24px);
+    text-decoration: underline;
+    font-weight: 400;
+    
+    &:hover {
+      color: $red;
+    }
+  }
+
+  &__title {
+    color: #5a5a5a;
+    font-size: rem(16px);
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+  
+  &-form {
+    padding: 0;
+    background: url("../img/bg/news_bg.jpg") no-repeat center;
+    text-align: center;
+    padding: 12px;
+  }
+}
+
+.form__wrap {
+  background: #fff;
+  border-radius: rem(20px);
+  overflow: hidden;
+  padding: rem(20px);
+}
+
+.form__parahraph {
+  color: #5a5a5a;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: rem(40px);
+}
+
+.form__text {
+  padding: rem(15px);
+  border-radius: rem(5px);
+  border: 2px solid rgba(#000, .2);
+  color: #5a5a5a;
+  flex: 1 50%;
+}
+
+form {
+  @include flex();
+  justify-content: space-around;
+}
+
+.button--form-news {
+  flex: 1 20%;
+  @include flex();
+  justify-content: center;
+
+  .button__link {
+    font-size: 17px;
+    font-weight: 700;
+
+    @include laptop {
+      font-size: 14px;
+    }
+
+    @include tablets {
+      font-size: 14px;
+      font-weight: 400;
+    }
+
+    @include tablets {
+      font-size: 12px;
+      font-weight:400;
+    }
+
+    &:active {
+      box-shadow: inset 0 2px 2px #942718;
+    }
+  }
+}
+

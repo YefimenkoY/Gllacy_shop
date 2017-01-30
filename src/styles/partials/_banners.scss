@@ -1,0 +1,76 @@
+.main {
+  margin-top: rem(-120px);
+
+  .container {
+    @include flex();
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+  }
+
+  @include laptop {
+    margin-top: rem(-250px);
+  }
+
+  @include tablets {
+    margin-top: rem(-350px);
+  }
+}
+
+.banners {
+  z-index: 20;
+  @include flex();
+  justify-content: space-between;
+
+  @include tablets {
+    justify-content: center;
+  }
+
+  &__left, &__right {
+    width: 49%;
+    border-radius: 15px;
+    padding: rem(20px);
+    @include flex();
+
+    @include tablets {
+      width: 90%;
+      margin-top: 20px;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+
+    h3 {
+      font-size: rem(31px);
+      font-weight: 700;
+    }
+
+    p {
+      font-size: rem(18px);
+      margin-top: rem(-20px);
+    }
+  }
+
+  &__left {
+    background: url("../img/bg/banners_left.jpg") no-repeat center;
+  }
+
+  &__right {
+    background: url("../img/bg/banners_right.jpg") no-repeat center;
+  }
+}
+
+.button--smaller {
+  margin-left: auto;
+  margin-top: rem(35px);
+
+  a {
+    font-size: rem(18px);
+
+    &:active {
+      box-shadow: inset 0 2px 2px #d7a49d;
+    }
+  }
+}

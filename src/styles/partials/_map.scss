@@ -1,0 +1,62 @@
+.map {
+  background: url("../img/map.jpg") no-repeat center;
+  background-size: cover;
+  height: rem(430px);
+  margin-top: rem(40px);
+  position: relative;
+  @include flex();
+  position: relative;
+
+  .container {
+    @include flex();
+    width: 100%;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__point {
+    @include sprite($point);
+    position: absolute;
+    left: rem(109px);
+    top: rem(12px);
+
+    @include phones {
+      left: 0;
+    }
+  }
+
+  &__addres {
+    background: #fff;
+    border-radius: rem(10px);
+    padding: rem(30px);
+    color: #343434;
+    font-weight: 400;
+    width: rem(340px);
+
+    @include phones {
+      display: none;
+    }
+  }
+}
+
+.addres__span {
+  font-weight: 700;
+  font-size: rem(17px);
+}
+
+.addres__bottom {
+  margin-top: rem(35px);
+}
+
+.button--map {
+  margin-top: rem(35px);
+
+  .button__link {
+    font-size:  rem(17px);
+
+    &:active {
+      box-shadow: inset 0 2px 2px #942718;
+    }
+  }
+}

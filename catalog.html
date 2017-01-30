@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Catalog</title>
+    <link rel="icon" href="build/img/favicon.ico">
+    <!--Styles-->
+    <link rel="stylesheet" href="build/css/main.css">
+</head>
+<body>
+
+<div class="wrapper">
+    <!--/=========== header ============/-->
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <a class="logo__link" href="/">
+                        <img src="build/img/Logo.png" alt="logo">
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item nav__item--hover nav__item--active">
+                            <a href="#" class="nav__link">
+                                <span>Каталог</span>
+                                <ul class="menu">
+                                    <li class="menu__item">
+                                        <h4 class="menu__title">Новинки</h4>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="#" class="menu__link">Сливочное</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="#" class="menu__link">Фруктовый лед</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="#" class="menu__link">Щербеты </a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="#" class="menu__link">Мелорин </a>
+                                    </li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link"><span>Доставка и оплата</span></a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link"><span>О Компании</span></a>
+                        </li>
+                    </ul>
+                    <ul class="menu">
+                        <li class="menu__item">
+                            <h4 class="menu__title">Новинки</h4>
+                        </li>
+                        <li class="menu__item nav__item--active">
+                            <a href="#" class="menu__link">Сливочное</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Фруктовый лед</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Щербеты </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Мелорин </a>
+                        </li>
+                    </ul>
+                </nav>
+                <form action="" class="form">
+                    <div class="form__submit">
+                        <input class="submit__btn" type="submit" value="">
+                        <div class="form__hover">
+                            <input type="text" class="hover__text" placeholder="Что ищем?">
+                        </div>
+                    </div>
+                </form>
+                <div class="buttons">
+                    <div class="login">
+                        <a class="button__login" href="#">Вход</a>
+                    </div>
+                    <div class="bascet">
+                        <a class="button__bascet" href="#">Пусто</a>
+                    </div>
+                </div>
+                <div class="contact">
+                    <div class="contact__time">С 10 до 20, ежедневно</div>
+                    <div class="contact__tel">8 812 450-25-25</div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main-catalog">
+        <div class="container">
+            <div class="wrap-top">
+                <ul class="bread-crumbs">
+                    <li class="bread-crumbs__item">
+                        <a href="/" class="bread-crumbs__link">Главная</a>
+                    </li>
+                    <li class="bread-crumbs__item">
+                        <a href="#" class="bread-crumbs__link">Каталог</a>
+                    </li>
+                    <li class="bread-crumbs__item">
+                        <p class="bread-crumbs__p">Сливочное</p>
+                    </li>
+                </ul>
+                <h1 class="wrap-top__title">Сливочное мороженое </h1>
+                <div class="filters">
+                    <form action="" class="form-catalog">
+                        <div class="filters__select">
+                            <div class="filters-title">
+                                <h3>Сортировка:</h3>
+                            </div>
+                            <select name="sort" id="" class="filters-box filters-box__sort">
+                                <option value="">по популярности</option>
+                                <option value="">сначала недорогие</option>
+                                <option value="">сначала дорогие</option>
+                                <option value="">по жирности</option>
+                            </select>
+                        </div>
+                        <div class="filters__price">
+                            <div class="filters-title">
+                                <h3>Цена: 100 руб. – 500 руб:</h3>
+                            </div>
+                            <div class="filters-box filters-box__scale">
+                                <div class="scale-line">
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filters__fat">
+                            <div class="filters-title">
+                                <h3>Жирность:</h3>
+                            </div>
+                            <div class="filters-box filters-box__fat">
+                                <label class="label">
+                                    <input type="radio" name="fat" class="fat">
+                                    <span class="box"></span>
+                                    0%
+                                </label>
+                                <label class="label">
+                                    <input type="radio" name="fat" class="fat">
+                                    <span class="box"></span>
+                                    до 10%
+                                </label>
+                                <label class="label">
+                                    <input type="radio" name="fat" class="fat">
+                                    <span class="box"></span>
+                                    до 30%
+                                </label>
+                                <label class="label">
+                                    <input type="radio" name="fat" class="fat">
+                                    <span class="box"></span>
+                                    выше 30%
+                                </label>
+                            </div>
+                        </div>
+                        <div class="filters__extender">
+                            <div class="filters-title">
+                                <h3>Наполнители:</h3>
+                            </div>
+                            <div class="filters-box filters-box__extender">
+                                <label class="label">
+                                    <input type="checkbox" name="extender" class="fat">
+                                    <span class="box"></span>
+                                    шоколадные
+                                </label>
+                                <label class="label">
+                                    <input type="checkbox" name="extender" class="fat">
+                                    <span class="box"></span>
+                                    сахарные присыпки
+                                </label>
+                                <label class="label">
+                                    <input type="checkbox" name="extender" class="fat">
+                                    <span class="box"></span>
+                                    фрукты
+                                </label>
+                                <label class="label">
+                                    <input type="checkbox" name="extender" class="fat">
+                                    <span class="box"></span>
+                                    сиропы
+                                </label>
+                                <label class="label">
+                                    <input type="checkbox" name="extender" class="fat">
+                                    <span class="box"></span>
+                                    джемы
+                                </label>
+                            </div>
+                        </div>
+                        <div class="filters__submit">
+                            <input type="submit" class="filters-box filters-box__submit" value="Примениь">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="wrap-bottom">
+                <ul class="hits__list hits__list--catalog">
+                    <li class="hits__item">
+                        <div class="hits__img">
+                            <img src="build/img/bg/hits_1.png" alt="" class="hits__pick">
+                            <div class="hits__weight">310 &#8381/кг</div>
+                        </div>
+                        <div class="hits__desc">
+                            <p>Сливочное с апельсиновым джемом и цитрусовой стружкой </p>
+                        </div>
+                        <div class="button button--hits">
+                            <a href="#" class="button__link">Быстрый просмотр</a>
+                        </div>
+                    </li>
+                    <li class="hits__item">
+                        <div class="hits__img">
+                            <img src="build/img/bg/hits_2.png" alt="" class="hits__pick">
+                            <div class="hits__weight">310 &#8381/кг</div>
+                        </div>
+                        <div class="hits__desc">
+                            <p>Сливочно-кофейное с кусочками шоколада</p>
+                        </div>
+                        <div class="button button--hits">
+                            <a href="#" class="button__link">Быстрый просмотр</a>
+                        </div>
+                    </li>
+                    <li class="hits__item">
+                        <div class="hits__img">
+                            <img src="build/img/bg/hits_3.png" alt="" class="hits__pick">
+                            <div class="hits__weight">310 &#8381/кг</div>
+                        </div>
+                        <div class="hits__desc">
+                            <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
+                        </div>
+                        <div class="button button--hits">
+                            <a href="#" class="button__link">Быстрый просмотр</a>
+                        </div>
+                    </li>
+                    <li class="hits__item">
+                        <div class="hits__img">
+                            <img src="build/img/bg/hits_4.png" alt="" class="hits__pick">
+                            <div class="hits__weight">310 &#8381/кг</div>
+                        </div>
+                        <div class="hits__desc">
+                            <p>Сливочное крем-брюле с карамельной подливкой</p>
+                        </div>
+                        <div class="button button--hits">
+                            <a href="#" class="button__link">Быстрый просмотр</a>
+                        </div>
+                    </li>
+                    <li class="hits__item">
+                        <div class="hits__img">
+                            <img src="build/img/bg/hits_5.png" alt="" class="hits__pick">
+                            <div class="hits__weight">325 &#8381/кг</div>
+                        </div>
+                        <div class="hits__desc">
+                            <p>Сливочное с брусничным джемом </p>
+                        </div>
+                        <div class="button button--hits">
+                            <a href="#" class="button__link">Быстрый просмотр</a>
+                        </div>
+                    </li>
+                    <li class="hits__item">
+                        <div class="hits__img">
+                            <img src="build/img/bg/hits_6.png" alt="" class="hits__pick">
+                            <div class="hits__weight">410 &#8381/кг</div>
+                        </div>
+                        <div class="hits__desc">
+                            <p>Сливочно-кофейное с кусочками шоколада</p>
+                        </div>
+                        <div class="button button--hits">
+                            <a href="#" class="button__link">Быстрый просмотр</a>
+                        </div>
+                    </li>
+                    <li class="hits__item">
+                        <div class="hits__img">
+                            <img src="build/img/bg/hits_7.png" alt="" class="hits__pick">
+                            <div class="hits__weight">375 &#8381/кг</div>
+                        </div>
+                        <div class="hits__desc">
+                            <p>Сливочно-черничное с цельными ягодами черники </p>
+                        </div>
+                        <div class="button button--hits">
+                            <a href="#" class="button__link">Быстрый просмотр</a>
+                        </div>
+                    </li>
+                    <li class="hits__item">
+                        <div class="hits__img">
+                            <img src="build/img/bg/hits_8.png" alt="" class="hits__pick">
+                            <div class="hits__weight">320 &#8381/кг</div>
+                        </div>
+                        <div class="hits__desc">
+                            <p>Сливочно-лимонное с карамельной присыпкой</p>
+                        </div>
+                        <div class="button button--hits">
+                            <a href="#" class="button__link">Быстрый просмотр</a>
+                        </div>
+                    </li>
+                    <li class="hits__item">
+                        <div class="hits__img">
+                            <img src="build/img/bg/hits_9.png" alt="" class="hits__pick">
+                            <div class="hits__weight">440 &#8381/кг</div>
+                        </div>
+                        <div class="hits__desc">
+                            <p>Сливочное с апельсиновым джемом и цитрусовой стружкой </p>
+                        </div>
+                        <div class="button button--hits">
+                            <a href="#" class="button__link">Быстрый просмотр</a>
+                        </div>
+                    </li>
+                    <li class="hits__item">
+                        <div class="hits__img">
+                            <img src="build/img/bg/hits_10.png" alt="" class="hits__pick">
+                            <div class="hits__weight">435 &#8381/кг</div>
+                        </div>
+                        <div class="hits__desc">
+                            <p>Сливочно-кофейное с кусочками шоколада</p>
+                        </div>
+                        <div class="button button--hits">
+                            <a href="#" class="button__link">Быстрый просмотр</a>
+                        </div>
+                    </li>
+                    <li class="hits__item">
+                        <div class="hits__img">
+                            <img src="build/img/bg/hits_3.png" alt="" class="hits__pick">
+                            <div class="hits__weight">310 &#8381/кг</div>
+                        </div>
+                        <div class="hits__desc">
+                            <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
+                        </div>
+                        <div class="button button--hits">
+                            <a href="#" class="button__link">Быстрый просмотр</a>
+                        </div>
+                    </li>
+                    <li class="hits__item">
+                        <div class="hits__img">
+                            <img src="build/img/bg/hits_11.png" alt="" class="hits__pick">
+                            <div class="hits__weight">355 &#8381/кг</div>
+                        </div>
+                        <div class="hits__desc">
+                            <p>Сливочное крем-брюле с карамельной подливкой</p>
+                        </div>
+                        <div class="button button--hits">
+                            <a href="#" class="button__link">Быстрый просмотр</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="social">
+            <a class="social__tw" href="#"></a>
+            <a class="social__insta" href="#"></a>
+            <a class="social__fb" href="#"></a>
+            <a class="social__vk" href="#"></a>
+        </div>
+        <ul class="footer-list">
+            <li class="footer-links__item">
+                <a href="#">Для поставщиков</a>
+            </li>
+            <li class="footer-links__item">
+                <a href="#">Наши документы</a>
+            </li>
+            <li class="footer-links__item">
+                <a href="#">О производстве </a>
+            </li>
+            <li class="footer-links__item">
+                <a href="#">Экологические стандарты</a>
+            </li>
+        </ul>
+        <div class="copyright">
+            <p>Made by ibol34tt  © 2016</p>
+        </div>
+    </div>
+</footer>
+
+<script src="./bower_components/jquery/dist/jquery.js"></script>
+<script src="./bower_components/slick-carousel/slick/slick.min.js"></script>
+<script src="./bower_components/wow/dist/wow.min.js"></script>
+<script src="build/js/main.js"></script>
+</body>
+</html>

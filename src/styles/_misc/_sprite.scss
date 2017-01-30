@@ -1,0 +1,261 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$bascet-name: 'bascet';
+$bascet-x: 85px;
+$bascet-y: 140px;
+$bascet-offset-x: -85px;
+$bascet-offset-y: -140px;
+$bascet-width: 21px;
+$bascet-height: 20px;
+$bascet-total-width: 177px;
+$bascet-total-height: 172px;
+$bascet-image: '../img/sprite.png';
+$bascet: (85px, 140px, -85px, -140px, 21px, 20px, 177px, 172px, '../img/sprite.png', 'bascet', );
+$bascet-hover-name: 'bascet_hover';
+$bascet-hover-x: 64px;
+$bascet-hover-y: 140px;
+$bascet-hover-offset-x: -64px;
+$bascet-hover-offset-y: -140px;
+$bascet-hover-width: 21px;
+$bascet-hover-height: 20px;
+$bascet-hover-total-width: 177px;
+$bascet-hover-total-height: 172px;
+$bascet-hover-image: '../img/sprite.png';
+$bascet-hover: (64px, 140px, -64px, -140px, 21px, 20px, 177px, 172px, '../img/sprite.png', 'bascet_hover', );
+$cow-name: 'cow';
+$cow-x: 129px;
+$cow-y: 0px;
+$cow-offset-x: -129px;
+$cow-offset-y: 0px;
+$cow-width: 48px;
+$cow-height: 49px;
+$cow-total-width: 177px;
+$cow-total-height: 172px;
+$cow-image: '../img/sprite.png';
+$cow: (129px, 0px, -129px, 0px, 48px, 49px, 177px, 172px, '../img/sprite.png', 'cow', );
+$fb-name: 'fb';
+$fb-x: 32px;
+$fb-y: 140px;
+$fb-offset-x: -32px;
+$fb-offset-y: -140px;
+$fb-width: 32px;
+$fb-height: 32px;
+$fb-total-width: 177px;
+$fb-total-height: 172px;
+$fb-image: '../img/sprite.png';
+$fb: (32px, 140px, -32px, -140px, 32px, 32px, 177px, 172px, '../img/sprite.png', 'fb', );
+$geader-search-name: 'geader-search';
+$geader-search-x: 148px;
+$geader-search-y: 140px;
+$geader-search-offset-x: -148px;
+$geader-search-offset-y: -140px;
+$geader-search-width: 17px;
+$geader-search-height: 17px;
+$geader-search-total-width: 177px;
+$geader-search-total-height: 172px;
+$geader-search-image: '../img/sprite.png';
+$geader-search: (148px, 140px, -148px, -140px, 17px, 17px, 177px, 172px, '../img/sprite.png', 'geader-search', );
+$heart-name: 'heart';
+$heart-x: 162px;
+$heart-y: 98px;
+$heart-offset-x: -162px;
+$heart-offset-y: -98px;
+$heart-width: 15px;
+$heart-height: 13px;
+$heart-total-width: 177px;
+$heart-total-height: 172px;
+$heart-image: '../img/sprite.png';
+$heart: (162px, 98px, -162px, -98px, 15px, 13px, 177px, 172px, '../img/sprite.png', 'heart', );
+$ice-cream-name: 'ice_cream';
+$ice-cream-x: 80px;
+$ice-cream-y: 49px;
+$ice-cream-offset-x: -80px;
+$ice-cream-offset-y: -49px;
+$ice-cream-width: 49px;
+$ice-cream-height: 49px;
+$ice-cream-total-width: 177px;
+$ice-cream-total-height: 172px;
+$ice-cream-image: '../img/sprite.png';
+$ice-cream: (80px, 49px, -80px, -49px, 49px, 49px, 177px, 172px, '../img/sprite.png', 'ice_cream', );
+$insta-name: 'insta';
+$insta-x: 0px;
+$insta-y: 140px;
+$insta-offset-x: 0px;
+$insta-offset-y: -140px;
+$insta-width: 32px;
+$insta-height: 32px;
+$insta-total-width: 177px;
+$insta-total-height: 172px;
+$insta-image: '../img/sprite.png';
+$insta: (0px, 140px, 0px, -140px, 32px, 32px, 177px, 172px, '../img/sprite.png', 'insta', );
+$list-name: 'list';
+$list-x: 80px;
+$list-y: 0px;
+$list-offset-x: -80px;
+$list-offset-y: 0px;
+$list-width: 49px;
+$list-height: 49px;
+$list-total-width: 177px;
+$list-total-height: 172px;
+$list-image: '../img/sprite.png';
+$list: (80px, 0px, -80px, 0px, 49px, 49px, 177px, 172px, '../img/sprite.png', 'list', );
+$login-name: 'login';
+$login-x: 106px;
+$login-y: 140px;
+$login-offset-x: -106px;
+$login-offset-y: -140px;
+$login-width: 21px;
+$login-height: 19px;
+$login-total-width: 177px;
+$login-total-height: 172px;
+$login-image: '../img/sprite.png';
+$login: (106px, 140px, -106px, -140px, 21px, 19px, 177px, 172px, '../img/sprite.png', 'login', );
+$login-hover-name: 'login_hover';
+$login-hover-x: 127px;
+$login-hover-y: 140px;
+$login-hover-offset-x: -127px;
+$login-hover-offset-y: -140px;
+$login-hover-width: 21px;
+$login-hover-height: 19px;
+$login-hover-total-width: 177px;
+$login-hover-total-height: 172px;
+$login-hover-image: '../img/sprite.png';
+$login-hover: (127px, 140px, -127px, -140px, 21px, 19px, 177px, 172px, '../img/sprite.png', 'login_hover', );
+$point-name: 'point';
+$point-x: 0px;
+$point-y: 0px;
+$point-offset-x: 0px;
+$point-offset-y: 0px;
+$point-width: 80px;
+$point-height: 140px;
+$point-total-width: 177px;
+$point-total-height: 172px;
+$point-image: '../img/sprite.png';
+$point: (0px, 0px, 0px, 0px, 80px, 140px, 177px, 172px, '../img/sprite.png', 'point', );
+$search-hover-name: 'search_hover';
+$search-hover-x: 112px;
+$search-hover-y: 98px;
+$search-hover-offset-x: -112px;
+$search-hover-offset-y: -98px;
+$search-hover-width: 17px;
+$search-hover-height: 17px;
+$search-hover-total-width: 177px;
+$search-hover-total-height: 172px;
+$search-hover-image: '../img/sprite.png';
+$search-hover: (112px, 98px, -112px, -98px, 17px, 17px, 177px, 172px, '../img/sprite.png', 'search_hover', );
+$term-name: 'term';
+$term-x: 129px;
+$term-y: 49px;
+$term-offset-x: -129px;
+$term-offset-y: -49px;
+$term-width: 48px;
+$term-height: 49px;
+$term-total-width: 177px;
+$term-total-height: 172px;
+$term-image: '../img/sprite.png';
+$term: (129px, 49px, -129px, -49px, 48px, 49px, 177px, 172px, '../img/sprite.png', 'term', );
+$tw-name: 'tw';
+$tw-x: 129px;
+$tw-y: 98px;
+$tw-offset-x: -130px;
+$tw-offset-y: -98px;
+$tw-width: 33px;
+$tw-height: 32px;
+$tw-total-width: 177px;
+$tw-total-height: 172px;
+$tw-image: '../img/sprite.png';
+$tw: (130px, 98px, -129px, -98px, 33px, 32px, 177px, 172px, '../img/sprite.png', 'tw', );
+$vk-name: 'vk';
+$vk-x: 80px;
+$vk-y: 98px;
+$vk-offset-x: -80px;
+$vk-offset-y: -98px;
+$vk-width: 32px;
+$vk-height: 32px;
+$vk-total-width: 177px;
+$vk-total-height: 172px;
+$vk-image: '../img/sprite.png';
+$vk: (80px, 98px, -80px, -98px, 32px, 32px, 177px, 172px, '../img/sprite.png', 'vk', );
+$spritesheet-width: 177px;
+$spritesheet-height: 172px;
+$spritesheet-image: '../img/sprite.png';
+$spritesheet-sprites: ($bascet, $bascet-hover, $cow, $fb, $geader-search, $heart, $ice-cream, $insta, $list, $login, $login-hover, $point, $search-hover, $term, $tw, $vk, );
+$spritesheet: (177px, 172px, '../img/sprite.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
