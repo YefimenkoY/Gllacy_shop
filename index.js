@@ -4,7 +4,7 @@ var fs = require('fs');
 var bodyParser = require('body-parser');
 
 app.set('port', (process.env.PORT || 2000));
-app.use(express.static(__dirname));
+app.use(express.static(__dirname + '/build'));
 
 app.use( bodyParser.json() );       
 app.use(bodyParser.urlencoded({    
@@ -12,11 +12,11 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.get('/', function(request, response) {
-  response.sendFile(__dirname + '/index.html')
+  response.sendFile(__dirname + '/build/index.html')
 });
 
 app.get('/catalog', function(request, response) {
-    response.sendFile(__dirname + '/catalog.html')
+    response.sendFile(__dirname + '/build/catalog.html')
 });
 
 app.post('/massage', function(req, res) {
